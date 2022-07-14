@@ -1,0 +1,138 @@
+.hero {
+    background-color: $primary-color;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+        height: 90vh;
+        z-index: 1;
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 24px 0 24px;
+
+        @include media-md {
+            grid-template-columns: 1fr;
+            height: 100%;
+        }
+
+        &--left {
+            width: 100%;
+            line-height: 1.2;
+
+            @include media-md {
+                padding: 5rem 0;
+            }
+        }
+
+        &--nav {
+            @extend %align-center;
+            list-style: none;
+            text-align: center;
+            font-size: 0.8rem;
+            
+            @include media-md {
+                font-size: 0.8rem;
+                margin-top: 1rem;
+            }
+
+            &--links {
+                color: set-text-color($primary-color);
+                @extend %align-center;
+                justify-content: center;
+                text-decoration: none;
+                padding: 1rem;
+
+                &:hover {
+                    color: $secondary-color;
+                    transition: all 0.3 ease;
+                }
+            }
+        }
+
+        &--left h1 {
+            font-size: 3rem;
+            color: set-text-color($primary-color);
+
+            @include media-md {
+                font-size: 2rem;
+            }
+        }
+
+        &--left h2 {
+            font-size: 1rem;
+            color: set-text-color($primary-color);
+            margin-top: 1rem;
+            opacity: 0.5;
+
+            @include media-md {
+                font-size: 1rem;
+            }
+        }
+
+        &--btn {
+            @extend %align-center;
+            padding: 12px 24px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            background: $secondary-color;
+            margin-top: 2rem;
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+                background: $accent-color;
+            }
+
+            @include media-md {
+                justify-content: center;
+                width: 100%;
+            }
+        }
+
+        &--btn a {
+            position: relative;
+            z-index: 2;
+            color: set-text-color($primary-color);
+            text-decoration: none;
+
+            @include media-md {
+                font-size: 1rem;
+            }
+        }
+
+        &--img {
+            height: 100%;
+            width: 100%;
+
+            @include media-md {
+                display: none;
+            }
+        }
+    }
+}
+
+.services {
+    background-color: $bg-color;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+        height: 50vh;
+        z-index: 1;
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 24px 0 24px;
+
+        @include media-md {
+            grid-template-columns: 1fr;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.navbar {
+    background: $primary-color;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem calc((100vw - 1200px)/2);
+    z-index: 10;
+    position: relative;
+
+    &__logo {
+        cursor: pointer;
+        padding: 1rem;
+        margin-left: 24px;
+        @extend %align-center;
+
+        @include media-md {
+            margin-left: 35vw;
+        }
+    }
+
+    &__bars {
+        color: set-text-color($primary-color);
+        opacity: 0;
+        @include media-md {
+            color: set-text-color($primary-color);
+            opacity: 1;
+            position: absolute;
+            top: 22px;
+            left: 20px;
+            font-size: 2rem;
+        }
+    }
+
+    &__menu {
+        @extend %align-center;
+        list-style: none;
+        text-align: center;
+        margin-right: 24px;
+
+        @include media-md {
+            display: none;
+        }
+
+        &--links {
+            color: set-text-color($primary-color);
+            @extend %align-center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 0 1rem;
+
+            &:hover {
+                color: $secondary-color;
+                transition: all 0.3 ease;
+            }
+
+            &--right {
+            color: set-text-color($primary-color);
+            @extend %align-center;
+            justify-content: right;
+            text-decoration: none;
+            padding: 0 2rem 0 10rem;
+            }
+        }
+
+        #button {
+            padding: 12px 24px;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            background: $secondary-color;
+            margin-left: 16px;
+            color: set-text-color($primary-color);
+
+            &:hover {
+                background: $accent-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__menu--links--right, .navbar__menu--links, .navbar__menu, .navbar__logo, .hero__container--btn, .hero__container--nav--links, .hero__container--nav {
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  background-color: #161b2c;
+}
+.hero__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px 0 24px;
+}
+@media screen and (max-width: 768px) {
+  .hero__container {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+.hero__container--left {
+  width: 100%;
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .hero__container--left {
+    padding: 5rem 0;
+  }
+}
+.hero__container--nav {
+  list-style: none;
+  text-align: center;
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 768px) {
+  .hero__container--nav {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+}
+.hero__container--nav--links {
+  color: #fff;
+  justify-content: center;
+  text-decoration: none;
+  padding: 1rem;
+}
+.hero__container--nav--links:hover {
+  color: #4069ff;
+  transition: all 0.3 ease;
+}
+.hero__container--left h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .hero__container--left h1 {
+    font-size: 2rem;
+  }
+}
+.hero__container--left h2 {
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 1rem;
+  opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+  .hero__container--left h2 {
+    font-size: 1rem;
+  }
+}
+.hero__container--btn {
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #4069ff;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+}
+.hero__container--btn:hover {
+  background: #2246CE;
+}
+@media screen and (max-width: 768px) {
+  .hero__container--btn {
+    justify-content: center;
+    width: 100%;
+  }
+}
+.hero__container--btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .hero__container--btn a {
+    font-size: 1rem;
+  }
+}
+.hero__container--img {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .hero__container--img {
+    display: none;
+  }
+}
+
+.services {
+  background-color: #EBECF2;
+}
+.services__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  height: 50vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px 0 24px;
+}
+@media screen and (max-width: 768px) {
+  .services__container {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+
+.navbar {
+  background: #161b2c;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  z-index: 10;
+  position: relative;
+}
+.navbar__logo {
+  cursor: pointer;
+  padding: 1rem;
+  margin-left: 24px;
+}
+@media screen and (max-width: 768px) {
+  .navbar__logo {
+    margin-left: 35vw;
+  }
+}
+.navbar__bars {
+  color: #fff;
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .navbar__bars {
+    color: #fff;
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    font-size: 2rem;
+  }
+}
+.navbar__menu {
+  list-style: none;
+  text-align: center;
+  margin-right: 24px;
+}
+@media screen and (max-width: 768px) {
+  .navbar__menu {
+    display: none;
+  }
+}
+.navbar__menu--links {
+  color: #fff;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+.navbar__menu--links:hover {
+  color: #4069ff;
+  transition: all 0.3 ease;
+}
+.navbar__menu--links--right {
+  color: #fff;
+  justify-content: right;
+  text-decoration: none;
+  padding: 0 2rem 0 10rem;
+}
+.navbar__menu #button {
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background: #4069ff;
+  margin-left: 16px;
+  color: #fff;
+}
+.navbar__menu #button:hover {
+  background: #2246CE;
+}
+
+body {
+  background: #fff;
+  color: #161b2c;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+h1, h2, h4 {
+  font-weight: 400;
+}/*# sourceMappingURL=main.css.map */

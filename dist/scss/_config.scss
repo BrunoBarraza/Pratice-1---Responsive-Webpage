@@ -1,0 +1,31 @@
+$primary-color: #161b2c;
+$secondary-color: #4069ff;
+$accent-color: #2246CE;
+$bg-color: #EBECF2;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+%align-center {
+    display: flex;
+    align-items: center;
+}
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #000;
+    }
+
+    @else {
+        @return #fff;
+    }
+}
+
+@mixin media-md {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
