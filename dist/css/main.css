@@ -126,10 +126,10 @@
 .services__container {
   display: grid;
   grid-template-columns: 1fr;
+  height: 100vh;
   align-items: center;
   justify-items: center;
   margin: 0 auto;
-  height: 50vh;
   z-index: 1;
   width: 100%;
   max-width: 1200px;
@@ -137,8 +137,48 @@
 }
 @media screen and (max-width: 768px) {
   .services__container {
-    grid-template-columns: 1fr;
     height: 100%;
+  }
+}
+.services__container--icon {
+  padding: 0.5rem;
+}
+.services__container h2 {
+  font-size: 1rem;
+  color: #161b2c;
+  padding: 0 1rem;
+}
+@media screen and (max-width: 768px) {
+  .services__container h2 {
+    font-size: 2rem;
+  }
+}
+.services__container h1 {
+  font-size: 2rem;
+  color: #161b2c;
+  padding: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .services__container h1 {
+    font-size: 2rem;
+  }
+}
+.services__container p {
+  font-size: 1rem;
+  color: #161b2c;
+}
+@media screen and (max-width: 768px) {
+  .services__container p {
+    font-size: 2rem;
+  }
+}
+.services__container--img {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .services__container--img {
+    display: none;
   }
 }
 

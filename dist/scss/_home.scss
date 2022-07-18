@@ -121,18 +121,59 @@
     &__container {
         display: grid;
         grid-template-columns: 1fr;
+        height: 100vh;        
         align-items: center;
         justify-items: center;
         margin: 0 auto;
-        height: 50vh;
         z-index: 1;
         width: 100%;
         max-width: 1200px;
         padding: 0 24px 0 24px;
 
         @include media-md {
-            grid-template-columns: 1fr;
             height: 100%;
+        }
+
+        &--icon {
+            padding: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1rem;
+            color: $primary-color;
+            padding: 0 1rem;
+
+            @include media-md {
+                font-size: 2rem;
+            }
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: $primary-color;
+            padding: 1rem;
+
+            @include media-md {
+                font-size: 2rem;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            color: $primary-color;
+
+            @include media-md {
+                font-size: 2rem;
+            }
+        }
+
+        &--img {
+            height: 100%;
+            width: 100%;
+            
+            @include media-md {
+                display: none;
+            }
         }
     }
 }
